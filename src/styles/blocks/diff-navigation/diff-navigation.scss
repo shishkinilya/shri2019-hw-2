@@ -1,0 +1,17 @@
+.diff-navigation {
+  display: flex;
+  padding-top: 4px;
+  padding-right: 11px;
+  padding-bottom: 4px;
+  padding-left: 11px;
+  background-color: #f1f8ff;
+  font-family: var(--mono-font-stack);
+  font-size: var(--text-size-xxs);
+  line-height: var(--line-height-m);
+  color: var(--gray-6);
+
+  &__col {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+}
