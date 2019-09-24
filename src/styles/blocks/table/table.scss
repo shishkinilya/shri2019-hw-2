@@ -1,9 +1,36 @@
 .table {
+  display: block;
   width: 100%;
   border-spacing: 0;
   border-collapse: collapse;
 
+  @include breakpoint($screen-lg) {
+    display: table;
+  }
+
+  &__header {
+    display: none;
+
+    @include breakpoint($screen-lg) {
+      display: table-header-group;
+    }
+  }
+
+  &__body {
+    display: block;
+
+    @include breakpoint($screen-lg) {
+      display: table-row-group;
+    }
+  }
+
   &__row {
+    display: grid;
+
+    @include breakpoint($screen-lg) {
+      display: table-row;
+    }
+
     &_border_bottom {
       border-bottom-width: 1px;
       border-bottom-style: solid;

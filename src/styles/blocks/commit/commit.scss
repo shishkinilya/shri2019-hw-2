@@ -1,10 +1,6 @@
 .commit {
   display: flex;
-  flex-wrap: wrap;
-
-  @include breakpoint($screen-lg) {
-    flex-wrap: nowrap;
-  }
+  flex-wrap: nowrap;
 
   &__icons {
     display: flex;
@@ -15,6 +11,7 @@
 
   &__info-container {
     display: flex;
+    flex-wrap: wrap;
     flex-grow: 1;
     padding-bottom: 12px;
   }
@@ -46,19 +43,59 @@
 
   &__message {
     margin-top: 0;
+    margin-right: 4px;
     margin-bottom: 2px;
+    flex-basis: calc(100% - 20px);
+    order: 1;
     font-weight: 500;
+
+    @include breakpoint($screen-lg) {
+      flex-basis: auto;
+      order: 1;
+    }
   }
 
   &__subject {
     margin-top: 0;
     margin-bottom: 4px;
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    order: 3;
+
+    @include breakpoint($screen-lg) {
+      order: 4;
+    }
+  }
+
+  &__repo-state-link {
+    order: 2;
+
+    @include breakpoint($screen-lg) {
+      order: 3;
+    }
+  }
+
+  &__hash {
+    display: none;
+
+    @include breakpoint($screen-lg) {
+      display: block;
+      order: 2;
+      margin-right: 230px;
+      margin-left: auto;
+    }
   }
 
   &__meta {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
+    order: 4;
+
+    @include breakpoint($screen-lg) {
+      order: 5;
+    }
   }
 
   &__author {

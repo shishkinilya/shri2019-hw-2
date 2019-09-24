@@ -4,12 +4,16 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 0;
-    //margin-bottom: 0;
+    margin-bottom: 14px;
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: var(--gray-4);
     padding-left: 0;
     list-style-type: none;
+
+    @include breakpoint($screen-lg) {
+      margin-bottom: 16px;
+    }
   }
 
   &__tab {

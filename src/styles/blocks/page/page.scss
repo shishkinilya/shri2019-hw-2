@@ -20,6 +20,18 @@
     }
   }
 
+  &__streched {
+    &_xs {
+      margin-right: -16px;
+      margin-left: -16px;
+
+      @include breakpoint($screen-lg) {
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
+  }
+
   &__header {
     margin-bottom: 12px;
   }
@@ -34,10 +46,18 @@
 
   &__breadcrumbs {
     margin-top: 0;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
+
+    @include breakpoint($screen-lg) {
+      margin-bottom: 12px;
+    }
   }
 
   &__subheading {
-    margin-bottom: 18px;
+    margin-bottom: 16px;
+
+    @include breakpoint($screen-lg) {
+      margin-bottom: 18px;
+    }
   }
 }

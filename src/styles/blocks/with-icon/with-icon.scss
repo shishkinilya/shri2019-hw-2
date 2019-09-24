@@ -22,6 +22,8 @@
   }
 
   &__icon {
+    flex-shrink: 0;
+
     &_position_left {
       margin-right: var(--with-icon-gap);
     }

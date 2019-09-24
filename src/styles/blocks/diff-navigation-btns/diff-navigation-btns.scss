@@ -1,6 +1,10 @@
 .diff-navigation-btns {
-  display: flex;
+  display: none;
   justify-content: center;
+
+  @include breakpoint($screen-lg) {
+    display: flex;
+  }
 }
 
 .diff-navigation-btn {

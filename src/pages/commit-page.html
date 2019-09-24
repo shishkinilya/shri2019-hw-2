@@ -46,14 +46,16 @@
         </span>
     </div>
 
-    <div class="diff">
+    <div class="diff page__streched page__streched_xs">
         <div class="diff-header">
-            <span class="diff-header__label diff-header__label_type_modified">M</span>
-            <svg class="diff-header__file-type-icon" width="10" height="13">
-                <use href="../../assets/icons/file-code.svg" />
-            </svg>
-            <span class="diff-header__path">/trunk/arcadia/devtools/intellij/src/main/java/ru/yandex/devtools/intellij/arc/client/ArcCli.java</span>
-            <div class="diff-header__aside">
+            <div class="diff-header__row">
+                <span class="diff-header__label diff-header__label_type_modified">M</span>
+                <svg class="diff-header__file-type-icon" width="10" height="13">
+                    <use href="../../assets/icons/file-code.svg" />
+                </svg>
+                <span class="diff-header__path">/trunk/arcadia/devtools/intellij/src/main/java/ru/yandex/devtools/intellij/arc/client/ArcCli.java</span>
+            </div>
+            <div class="diff-header__row diff-header__aside">
                 <span class="diff-header__counters">
                     <span class="diff-header__counter diff-header__counter_type_add">+100</span>
                     <span class="diff-header__counter diff-header__counter_type_remove">-81</span>
@@ -82,163 +84,164 @@
                         <span class="diff-navigation-btn__text">Above 20 lines</span>
                     </button>
                 </div>
-                <div class="diff-navigation__col"></div>
             </div>
 
-            <table class="code-view code-view_lang_java text_size_xxs text_line-height_m">
-                <tbody>
-                <tr class="code-view__line">
-                    <td class="code-view__line-number">1</td>
-                    <td class="code-view__line-number">1</td>
-                    <td class="code-view__code">package ru.yandex.devtools.intellij.arc.client;</td>
-                </tr>
-                <tr class="code-view__line">
-                    <td class="code-view__line-number">2</td>
-                    <td class="code-view__line-number">2</td>
-                    <td class="code-view__code"></td>
-                </tr>
-                <tr class="code-view__line code-view__line_highlight_green">
-                    <td class="code-view__line-number"></td>
-                    <td class="code-view__line-number">3</td>
-                    <td class="code-view__code"><span class="token token_type_keyword">import</span> java.util.ArrayList;</td>
-                </tr>
-                <tr class="code-view__line code-view__line_highlight_green">
-                    <td class="code-view__line-number"></td>
-                    <td class="code-view__line-number">4</td>
-                    <td class="code-view__code"><span class="token token_type_keyword">import</span> java.util.Collection;</td>
-                </tr>
-                <tr class="code-view__line code-view__line_highlight_green">
-                    <td class="code-view__line-number"></td>
-                    <td class="code-view__line-number">5</td>
-                    <td class="code-view__code"><span class="token token_type_keyword">import</span> java.util.List;</td>
-                </tr>
-                <tr class="code-view__line code-view__line_highlight_green">
-                    <td class="code-view__line-number"></td>
-                    <td class="code-view__line-number">6</td>
-                    <td class="code-view__code"></td>
-                </tr>
-                <tr class="code-view__line">
-                    <td class="code-view__line-number">3</td>
-                    <td class="code-view__line-number">7</td>
-                    <td class="code-view__code"><span class="token token_type_keyword">import</span> com.intellij.openapi.diagnostic.Logger;</td>
-                </tr>
-                <tr class="code-view__line code-view__line_highlight_green">
-                    <td class="code-view__line-number"></td>
-                    <td class="code-view__line-number">8</td>
-                    <td class="code-view__code"><span class="token token_type_keyword">import</span> com.intellij.openapi.project.Project;</td>
-                </tr>
-                <tr class="code-view__line">
-                    <td class="code-view__line-number">4</td>
-                    <td class="code-view__line-number">9</td>
-                    <td class="code-view__code"><span class="token token_type_keyword">import</span> com.intellij.openapi.vcs.FilePath;</td>
-                </tr>
-                <tr class="code-view__line">
-                    <td class="code-view__line-number">5</td>
-                    <td class="code-view__line-number">10</td>
-                    <td class="code-view__code"><span class="token token_type_keyword">import</span> com.intellij.openapi.vcs.VcsException;</td>
-                </tr>
-                <tr class="code-view__line">
-                    <td class="code-view__line-number">6</td>
-                    <td class="code-view__line-number">11</td>
-                    <td class="code-view__code"><span class="token token_type_keyword">import</span> com.intellij.openapi.vfs.VirtualFile;</td>
-                </tr>
-                <tr class="code-view__line">
-                    <td class="code-view__line-number">7</td>
-                    <td class="code-view__line-number">12</td>
-                    <td class="code-view__code"><span class="token token_type_keyword">import</span> com.intellij.vcsUtil.VcsUtil;</td>
-                </tr>
-                <tr class="code-view__line code-view__line_highlight_green">
-                    <td class="code-view__line-number"></td>
-                    <td class="code-view__line-number">13</td>
-                    <td class="code-view__code"><span class="token token_type_keyword">import</span> org.jetbrains.annotations.NotNull;</td>
-                </tr>
-                <tr class="code-view__line code-view__line_highlight_green">
-                    <td class="code-view__line-number"></td>
-                    <td class="code-view__line-number">14</td>
-                    <td class="code-view__code"></td>
-                </tr>
-                <tr class="code-view__line">
-                    <td class="code-view__line-number">8</td>
-                    <td class="code-view__line-number">15</td>
-                    <td class="code-view__code"><span class="token token_type_keyword">import</span> ru.yandex.devtools.intellij.arc.ArcContext;</td>
-                </tr>
-                <tr class="code-view__line">
-                    <td class="code-view__line-number">9</td>
-                    <td class="code-view__line-number">16</td>
-                    <td class="code-view__code"><span class="token token_type_keyword">import</span> ru.yandex.devtools.intellij.arc.ArcRevisionNumber;</td>
-                </tr>
-                <tr class="code-view__line">
-                    <td class="code-view__line-number">10</td>
-                    <td class="code-view__line-number">17</td>
-                    <td class="code-view__code"><span class="token token_type_keyword">import</span> ru.yandex.devtools.intellij.arc.ArcStatus;</td>
-                </tr>
-                <tr class="code-view__line code-view__line_highlight_green">
-                    <td class="code-view__line-number"></td>
-                    <td class="code-view__line-number">18</td>
-                    <td class="code-view__code"><span class="token token_type_keyword">import</span> ru.yandex.devtools.intellij.arc.ui.ArcResetDialog;</td>
-                </tr>
-                <tr class="code-view__line">
-                    <td class="code-view__line-number">11</td>
-                    <td class="code-view__line-number">19</td>
-                    <td class="code-view__code"></td>
-                </tr>
-                <tr class="code-view__line code-view__line_highlight_red">
-                    <td class="code-view__line-number">12</td>
-                    <td class="code-view__line-number"></td>
-                    <td class="code-view__code"><span class="token token_type_keyword">import</span> java.util.ArrayList;</td>
-                </tr>
-                <tr class="code-view__line code-view__line_highlight_red">
-                    <td class="code-view__line-number">13</td>
-                    <td class="code-view__line-number"></td>
-                    <td class="code-view__code"><span class="token token_type_keyword">import</span> java.util.Collection;</td>
-                </tr>
-                <tr class="code-view__line code-view__line_highlight_red">
-                    <td class="code-view__line-number">14</td>
-                    <td class="code-view__line-number"></td>
-                    <td class="code-view__code"><span class="token token_type_keyword">import</span> java.util.List;</td>
-                </tr>
-                <tr class="code-view__line code-view__line_highlight_red">
-                    <td class="code-view__line-number">15</td>
-                    <td class="code-view__line-number"></td>
-                    <td class="code-view__code"></td>
-                </tr>
-                <tr class="code-view__line">
-                    <td class="code-view__line-number">16</td>
-                    <td class="code-view__line-number">20</td>
-                    <td class="code-view__code"><span class="token token_type_comment">/**</span></td>
-                </tr>
-                <tr class="code-view__line">
-                    <td class="code-view__line-number">17</td>
-                    <td class="code-view__line-number">21</td>
-                    <td class="code-view__code"><span class="token token_type_comment">* @author Dmitry Andreev</span></td>
-                </tr>
-                <tr class="code-view__line">
-                    <td class="code-view__line-number"></td>
-                    <td class="code-view__line-number">22</td>
-                    <td class="code-view__code"><span class="token token_type_comment">* @date 11/10/2018</span></td>
-                </tr>
-                <tr class="code-view__line">
-                    <td class="code-view__line-number">18</td>
-                    <td class="code-view__line-number">23</td>
-                    <td class="code-view__code"><span class="token token_type_comment">*/</span></td>
-                </tr>
-                <tr class="code-view__line">
-                    <td class="code-view__line-number">19</td>
-                    <td class="code-view__line-number">24</td>
-                    <td class="code-view__code"><span class="token token_type_keyword">public</span> <span class="token token_type_identifier">ArcCli</span>(<span class="token token_type_identifier">String</span> arcBinaryPath) {</td>
-                </tr>
-                <tr class="code-view__line">
-                    <td class="code-view__line-number">20</td>
-                    <td class="code-view__line-number">25</td>
-                    <td class="code-view__code">    this.arcBinaryPath = arcBinaryPath;</td>
-                </tr>
-                <tr class="code-view__line">
-                    <td class="code-view__line-number">21</td>
-                    <td class="code-view__line-number">26</td>
-                    <td class="code-view__code">}</td>
-                </tr>
-                </tbody>
-            </table>
+            <div class="overflow-container overflow-container_xs">
+                <table class="code-view code-view_lang_java text_size_xxs text_line-height_m">
+                    <tbody>
+                    <tr class="code-view__line">
+                        <td class="code-view__line-number">1</td>
+                        <td class="code-view__line-number">1</td>
+                        <td class="code-view__code">package ru.yandex.devtools.intellij.arc.client;</td>
+                    </tr>
+                    <tr class="code-view__line">
+                        <td class="code-view__line-number">2</td>
+                        <td class="code-view__line-number">2</td>
+                        <td class="code-view__code"></td>
+                    </tr>
+                    <tr class="code-view__line code-view__line_highlight_green">
+                        <td class="code-view__line-number"></td>
+                        <td class="code-view__line-number">3</td>
+                        <td class="code-view__code"><span class="token token_type_keyword">import</span> java.util.ArrayList;</td>
+                    </tr>
+                    <tr class="code-view__line code-view__line_highlight_green">
+                        <td class="code-view__line-number"></td>
+                        <td class="code-view__line-number">4</td>
+                        <td class="code-view__code"><span class="token token_type_keyword">import</span> java.util.Collection;</td>
+                    </tr>
+                    <tr class="code-view__line code-view__line_highlight_green">
+                        <td class="code-view__line-number"></td>
+                        <td class="code-view__line-number">5</td>
+                        <td class="code-view__code"><span class="token token_type_keyword">import</span> java.util.List;</td>
+                    </tr>
+                    <tr class="code-view__line code-view__line_highlight_green">
+                        <td class="code-view__line-number"></td>
+                        <td class="code-view__line-number">6</td>
+                        <td class="code-view__code"></td>
+                    </tr>
+                    <tr class="code-view__line">
+                        <td class="code-view__line-number">3</td>
+                        <td class="code-view__line-number">7</td>
+                        <td class="code-view__code"><span class="token token_type_keyword">import</span> com.intellij.openapi.diagnostic.Logger;</td>
+                    </tr>
+                    <tr class="code-view__line code-view__line_highlight_green">
+                        <td class="code-view__line-number"></td>
+                        <td class="code-view__line-number">8</td>
+                        <td class="code-view__code"><span class="token token_type_keyword">import</span> com.intellij.openapi.project.Project;</td>
+                    </tr>
+                    <tr class="code-view__line">
+                        <td class="code-view__line-number">4</td>
+                        <td class="code-view__line-number">9</td>
+                        <td class="code-view__code"><span class="token token_type_keyword">import</span> com.intellij.openapi.vcs.FilePath;</td>
+                    </tr>
+                    <tr class="code-view__line">
+                        <td class="code-view__line-number">5</td>
+                        <td class="code-view__line-number">10</td>
+                        <td class="code-view__code"><span class="token token_type_keyword">import</span> com.intellij.openapi.vcs.VcsException;</td>
+                    </tr>
+                    <tr class="code-view__line">
+                        <td class="code-view__line-number">6</td>
+                        <td class="code-view__line-number">11</td>
+                        <td class="code-view__code"><span class="token token_type_keyword">import</span> com.intellij.openapi.vfs.VirtualFile;</td>
+                    </tr>
+                    <tr class="code-view__line">
+                        <td class="code-view__line-number">7</td>
+                        <td class="code-view__line-number">12</td>
+                        <td class="code-view__code"><span class="token token_type_keyword">import</span> com.intellij.vcsUtil.VcsUtil;</td>
+                    </tr>
+                    <tr class="code-view__line code-view__line_highlight_green">
+                        <td class="code-view__line-number"></td>
+                        <td class="code-view__line-number">13</td>
+                        <td class="code-view__code"><span class="token token_type_keyword">import</span> org.jetbrains.annotations.NotNull;</td>
+                    </tr>
+                    <tr class="code-view__line code-view__line_highlight_green">
+                        <td class="code-view__line-number"></td>
+                        <td class="code-view__line-number">14</td>
+                        <td class="code-view__code"></td>
+                    </tr>
+                    <tr class="code-view__line">
+                        <td class="code-view__line-number">8</td>
+                        <td class="code-view__line-number">15</td>
+                        <td class="code-view__code"><span class="token token_type_keyword">import</span> ru.yandex.devtools.intellij.arc.ArcContext;</td>
+                    </tr>
+                    <tr class="code-view__line">
+                        <td class="code-view__line-number">9</td>
+                        <td class="code-view__line-number">16</td>
+                        <td class="code-view__code"><span class="token token_type_keyword">import</span> ru.yandex.devtools.intellij.arc.ArcRevisionNumber;</td>
+                    </tr>
+                    <tr class="code-view__line">
+                        <td class="code-view__line-number">10</td>
+                        <td class="code-view__line-number">17</td>
+                        <td class="code-view__code"><span class="token token_type_keyword">import</span> ru.yandex.devtools.intellij.arc.ArcStatus;</td>
+                    </tr>
+                    <tr class="code-view__line code-view__line_highlight_green">
+                        <td class="code-view__line-number"></td>
+                        <td class="code-view__line-number">18</td>
+                        <td class="code-view__code"><span class="token token_type_keyword">import</span> ru.yandex.devtools.intellij.arc.ui.ArcResetDialog;</td>
+                    </tr>
+                    <tr class="code-view__line">
+                        <td class="code-view__line-number">11</td>
+                        <td class="code-view__line-number">19</td>
+                        <td class="code-view__code"></td>
+                    </tr>
+                    <tr class="code-view__line code-view__line_highlight_red">
+                        <td class="code-view__line-number">12</td>
+                        <td class="code-view__line-number"></td>
+                        <td class="code-view__code"><span class="token token_type_keyword">import</span> java.util.ArrayList;</td>
+                    </tr>
+                    <tr class="code-view__line code-view__line_highlight_red">
+                        <td class="code-view__line-number">13</td>
+                        <td class="code-view__line-number"></td>
+                        <td class="code-view__code"><span class="token token_type_keyword">import</span> java.util.Collection;</td>
+                    </tr>
+                    <tr class="code-view__line code-view__line_highlight_red">
+                        <td class="code-view__line-number">14</td>
+                        <td class="code-view__line-number"></td>
+                        <td class="code-view__code"><span class="token token_type_keyword">import</span> java.util.List;</td>
+                    </tr>
+                    <tr class="code-view__line code-view__line_highlight_red">
+                        <td class="code-view__line-number">15</td>
+                        <td class="code-view__line-number"></td>
+                        <td class="code-view__code"></td>
+                    </tr>
+                    <tr class="code-view__line">
+                        <td class="code-view__line-number">16</td>
+                        <td class="code-view__line-number">20</td>
+                        <td class="code-view__code"><span class="token token_type_comment">/**</span></td>
+                    </tr>
+                    <tr class="code-view__line">
+                        <td class="code-view__line-number">17</td>
+                        <td class="code-view__line-number">21</td>
+                        <td class="code-view__code"><span class="token token_type_comment">* @author Dmitry Andreev</span></td>
+                    </tr>
+                    <tr class="code-view__line">
+                        <td class="code-view__line-number"></td>
+                        <td class="code-view__line-number">22</td>
+                        <td class="code-view__code"><span class="token token_type_comment">* @date 11/10/2018</span></td>
+                    </tr>
+                    <tr class="code-view__line">
+                        <td class="code-view__line-number">18</td>
+                        <td class="code-view__line-number">23</td>
+                        <td class="code-view__code"><span class="token token_type_comment">*/</span></td>
+                    </tr>
+                    <tr class="code-view__line">
+                        <td class="code-view__line-number">19</td>
+                        <td class="code-view__line-number">24</td>
+                        <td class="code-view__code"><span class="token token_type_keyword">public</span> <span class="token token_type_identifier">ArcCli</span>(<span class="token token_type_identifier">String</span> arcBinaryPath) {</td>
+                    </tr>
+                    <tr class="code-view__line">
+                        <td class="code-view__line-number">20</td>
+                        <td class="code-view__line-number">25</td>
+                        <td class="code-view__code">    this.arcBinaryPath = arcBinaryPath;</td>
+                    </tr>
+                    <tr class="code-view__line">
+                        <td class="code-view__line-number">21</td>
+                        <td class="code-view__line-number">26</td>
+                        <td class="code-view__code">}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
 
             <div class="diff-navigation">
                 <div class="diff-navigation__col">
@@ -258,7 +261,6 @@
                         <span class="diff-navigation-btn__text">Above 20 lines</span>
                     </button>
                 </div>
-                <div class="diff-navigation__col"></div>
             </div>
         </div>
     </div>
